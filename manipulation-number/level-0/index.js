@@ -4,4 +4,4 @@ var a = 4
 let b = 5
 const c = 7
 
-console.log(a + b);
+console.log(a + b + c);

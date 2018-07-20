@@ -3,7 +3,7 @@ console.log("JAVASCRIPT");
 let a = true;
 let b = false;
 let c = "coffee";
-let d = "cake";
+let d = "coke";
 
 x = a || b
 y = a && b
