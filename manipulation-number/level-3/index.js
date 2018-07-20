@@ -1,11 +1,14 @@
 console.log("JAVASCRIPT");
 
-let x = [-1, 0, 1, 2, 3]
+var a = [-1, 0, 1, 2, 3];
+var b = "bilangan";
 
-console.log("Array length", x.length)
+var c = a.concat(b);
+console.log(c);
 
-console.log(a = x[0] + x[4])
+var x = true;
+var d = a.push(x);
+console.log(a);
 
-console.log(x[0], "adalah bilangan negatif")
-
-console.log(x[0] + x[3] == x[2])
+var e = a.pop();
+console.log(a);

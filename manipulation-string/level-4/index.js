@@ -1,8 +1,8 @@
 console.log("JAVASCRIPT");
 
-const a = "Ini"
-const b = "Ibu"
-const c = "Budi"
+const a = "Hello"
+const b = "World"
+const c = "!"
 
 console.log(a);
 console.log(b);

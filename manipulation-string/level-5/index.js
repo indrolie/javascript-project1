@@ -1,10 +1,10 @@
 console.log("JAVASCRIPT");
 
-const a = "Ini"
-const b = "Ibu"
-const c = "Budi"
+const a = "Hello"
+const b = "World"
+const c = "!"
 
-console.log(a, "adalah", b, c);
+console.log(a, ",", b, c);
 
 const d = b + " " + c
 const e = `${b} ${c}`;

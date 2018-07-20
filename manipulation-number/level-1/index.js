@@ -1,12 +1,12 @@
 console.log("JAVASCRIPT");
 
-let a = 5
-let b = 10
+var a = 5;
+var b = 10;
 
-c = a + b
-d = a - b
-e = b / a
-f = (a + b) / d
-g = ((b / a) + b) % b
+var c = a + b;
+var d = a - b;
+var e = b / a;
+var f = (a + b) / d;
+var g = ((b / a) + b) % b;
 
-console.log(c, d, e, f, g, c)
+console.log(c, d, e, f, g);

@@ -1,24 +1,24 @@
 console.log("JAVASCRIPT");
 
-let a = true;
-let b = false;
-let c = "coffee";
-let d = "coke";
+var a = true;
+var b = false;
+var c = "coffee";
+var d = "coke";
 
-x = a || b
-y = a && b
+var x = a || b;
+var y = a && b;
 
 console.log(x, "or", y);
 console.log(c, "and", d);
 
 
-let e = -25
-let f = 5
+var e = -25;
+var f = 5;
 
-g = e / f
+var g = e / f;
 
-let i = 123123923423
+var i = 123123923423;
 
-n = i * e
+var n = i * e;
 
 console.log(g, n);
