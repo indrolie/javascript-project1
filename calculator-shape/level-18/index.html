@@ -8,13 +8,22 @@
 <body>
     <h1>TITLE</h1>
 
-    Enter square size:
-    <input type="text" id="size">
-    <input type="button" value="calculate" onclick="calculateSquareArea(size)">
-    <p>Square Area:
+    <div>
+        Enter tube radius:
+        <input type="text" id="radius">
+    </div>
+    <div>
+        Enter tube height:
+        <input type="text" id="height">
+        <input type="button" value="calculate" onclick="calculateTubeVolume(radius,height)">
+    </div>
+
+    <div>
+        Tube Volume:
         <input type="text" id="result">
-    </p>
+    </div>
     <script src="index.js "></script>
+
 </body>
 
 </html>

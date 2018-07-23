@@ -1,7 +1,11 @@
 console.log("JAVASCRIPT");
 
-function calculateSquareArea(size) {
-    size = (document.getElementById("size").value);
-    const area = size * size;
-    document.getElementById("result").value = area;
+function calculateTubeVolume(radius, height) {
+
+    const phi = Math.PI;
+
+    width = (document.getElementById("radius").value);
+    height = (document.getElementById("height").value);
+    const volume = phi * width * width * height;
+    document.getElementById("result").value = volume;
 }
