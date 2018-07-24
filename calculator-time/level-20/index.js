@@ -1,59 +1,59 @@
 console.log("JAVASCRIPT");
 
-var formDay = document.getElementById("day");
-var formHour = document.getElementById("hour");
-var formMinute = document.getElementById("minute");
-var formSecond = document.getElementById("second");
+const textBoxDay = document.getElementById("day");
+const textBoxHour = document.getElementById("hour");
+const textBoxMinute = document.getElementById("minute");
+const textBoxSecond = document.getElementById("second");
 
 function countDay() {
-  var day = Number(document.getElementById("day").value);
+  const day = Number(textBoxDay.value);
 
-  hour = day * 24;
-  minute = day * 24 * 60;
-  second = day * 24 * 60 * 60;
+  const hour = day * 24;
+  const minute = day * 24 * 60;
+  const second = day * 24 * 60 * 60;
 
-  document.getElementById("hour").value = hour;
-  document.getElementById("minute").value = minute;
-  document.getElementById("second").value = second;
+  textBoxHour.value = hour;
+  textBoxMinute.value = minute;
+  textBoxSecond.value = second;
 }
 
 function countHour() {
-  var hour = Number(document.getElementById("hour").value);
+  const hour = Number(textBoxHour.value);
 
-  day = hour / 24;
-  minute = hour * 60;
-  second = hour * 60 * 60;
+  const day = hour / 24;
+  const minute = hour * 60;
+  const second = hour * 60 * 60;
 
-  document.getElementById("day").value = day;
-  document.getElementById("minute").value = minute;
-  document.getElementById("second").value = second;
+  textBoxDay.value = day;
+  textBoxMinute.value = minute;
+  textBoxSecond.value = second;
 }
 
 function countMinute() {
-  var minute = Number(document.getElementById("minute").value);
+  const minute = Number(textBoxMinute.value);
 
-  day = minute / 60 / 24;
-  hour = minute / 60;
-  second = minute * 60;
+  const day = minute / 60 / 24;
+  const hour = minute / 60;
+  const second = minute * 60;
 
-  document.getElementById("day").value = day;
-  document.getElementById("hour").value = hour;
-  document.getElementById("second").value = second;
+  textBoxDay.value = day;
+  textBoxHour.value = hour;
+  textBoxSecond.value = second;
 }
 
 function countSecond() {
-  var second = Number(document.getElementById("second").value);
+  const second = Number(textBoxSecond.value);
 
-  day = second / 60 / 60 / 24;
-  hour = second / 60 / 60;
-  minute = second / 60;
+  const day = second / 60 / 60 / 24;
+  const hour = second / 60 / 60;
+  const minute = second / 60;
 
-  document.getElementById("day").value = day;
-  document.getElementById("hour").value = hour;
-  document.getElementById("minute").value = minute;
+  textBoxDay.value = day;
+  textBoxHour.value = hour;
+  textBoxMinute.value = minute;
 }
 
-formDay.addEventListener("input", countDay);
-formHour.addEventListener("input", countHour);
-formMinute.addEventListener("input", countMinute);
-formSecond.addEventListener("input", countSecond);
+textBoxDay.addEventListener("input", countDay);
+textBoxHour.addEventListener("input", countHour);
+textBoxMinute.addEventListener("input", countMinute);
+textBoxSecond.addEventListener("input", countSecond);
