@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>TITLE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cylinder Volume Calculator</title>
 </head>
 
 <body>
-    <h1>Tube Volume Calculator</h1>
+    <h1>Insert the radius and height to calculate the volume</h1>
 
-    <div>
+    <label>
         Enter tube radius:
         <input type="text" id="radius">
-    </div>
-    <div>
+    </label>
+    <label>
         Enter tube height:
         <input type="text" id="height">
-        <input type="button" value="calculate" onclick="calculateTubeVolume(radius,height)">
-    </div>
+        <input type="submit" id="button-calculate" value="calculate">
+    </label>
 
-    <div>
+    <label>
         Tube Volume:
         <input type="text" id="result">
-    </div>
+    </label>
+
     <script src="index.js "></script>
 
 </body>

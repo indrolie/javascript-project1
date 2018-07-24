@@ -1,11 +1,13 @@
 console.log("JAVASCRIPT");
 
-function calculateTubeVolume(radius, height) {
+const calculate = document.getElementById("button-calculate");
+
+calculate.onclick = function calculateTubeVolume() {
 
     const phi = Math.PI;
 
-    width = (document.getElementById("radius").value);
-    height = (document.getElementById("height").value);
-    const volume = phi * width * width * height;
+    const radius = Number(document.getElementById("radius").value);
+    const height = Number(document.getElementById("height").value);
+    const volume = phi * radius * radius * height;
     document.getElementById("result").value = volume;
 }
