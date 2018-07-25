@@ -5,7 +5,7 @@ const textBoxHour = document.getElementById("hour");
 const textBoxMinute = document.getElementById("minute");
 const textBoxSecond = document.getElementById("second");
 
-function countDay() {
+const countDay = () => {
   const day = Number(textBoxDay.value);
 
   const hour = day * 24;
@@ -15,9 +15,9 @@ function countDay() {
   textBoxHour.value = hour;
   textBoxMinute.value = minute;
   textBoxSecond.value = second;
-}
+};
 
-function countHour() {
+const countHour = () => {
   const hour = Number(textBoxHour.value);
 
   const day = hour / 24;
@@ -27,9 +27,9 @@ function countHour() {
   textBoxDay.value = day;
   textBoxMinute.value = minute;
   textBoxSecond.value = second;
-}
+};
 
-function countMinute() {
+const countMinute = () => {
   const minute = Number(textBoxMinute.value);
 
   const day = minute / 60 / 24;
@@ -39,9 +39,9 @@ function countMinute() {
   textBoxDay.value = day;
   textBoxHour.value = hour;
   textBoxSecond.value = second;
-}
+};
 
-function countSecond() {
+const countSecond = () => {
   const second = Number(textBoxSecond.value);
 
   const day = second / 60 / 60 / 24;
@@ -51,7 +51,7 @@ function countSecond() {
   textBoxDay.value = day;
   textBoxHour.value = hour;
   textBoxMinute.value = minute;
-}
+};
 
 textBoxDay.addEventListener("input", countDay);
 textBoxHour.addEventListener("input", countHour);
