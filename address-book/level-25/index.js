@@ -4,7 +4,16 @@ console.log("JAVASCRIPT");
 
 const buttonAdd = document.getElementById("button-add");
 
-const checkemail = () => {
+const checkName = () => {
+  const textboxName = document.getElementById("name").value;
+
+  if (textboxName == "") {
+    const errorMessage = "Please enter the name";
+    document.getElementById("error-name").innerHTML = errorMessage;
+  }
+};
+
+const checkEmail = () => {
   try {
     event.preventDefault();
     let email = document.getElementById("email").value;
@@ -22,4 +31,36 @@ const checkemail = () => {
   }
 };
 
-buttonAdd.addEventListener("click", checkemail);
+let contact = [];
+
+const addContact = () => {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phoneNumber = document.getElementById("phone-number").value;
+  let newContact = [name, email, phoneNumber];
+
+  contact.push(newContact);
+  addStorage(contact);
+};
+
+const addStorage = newData => {
+  localStorage.setItem("Contact_List", JSON.stringify(newData));
+};
+
+const getContact = () => {
+  let getData = localStorage.getItem("Contact_List");
+  let contact = JSON.parse("getData");
+
+  document.getElementById("show-name").innerHTML = "Name: " + contact[0];
+  document.getElementById("show-email").innerHTML = "Email: " + contact[1];
+  document.getElementById("show-phone-number").innerHTML =
+    "Phone Number: " + contact[2];
+};
+
+const runAll = () => {
+  checkName();
+  checkEmail();
+  addContact();
+};
+
+buttonAdd.addEventListener("click", runAll);

@@ -1,6 +1,11 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: url(images/background.jpg);
+}
+
+h1 {
+  font-size: 30px;
 }
 
 .container {
@@ -9,6 +14,20 @@ body {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+  margin: 30px;
+}
+
+.form input {
+  line-height: 30px;
+  margin: 5px;
+}
+
+.container input {
+  border-radius: 4px;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
 }
